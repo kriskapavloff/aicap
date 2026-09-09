@@ -1,0 +1,9 @@
+numpy
+Pillow
+torch
+torchvision
+matplotlib
+piexif
+open_clip_torch
+scikit-learn
+pandas

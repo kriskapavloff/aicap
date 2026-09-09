@@ -1,0 +1,31 @@
+# Данные и результаты экспериментов (могут быть большими, не коммитим)
+aicap/data/*
+!aicap/data/.gitkeep
+
+# Виртуальное окружение Python
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Веса моделей (скачиваются отдельно, слишком большие для git)
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Переменные окружения / секреты
+.env
