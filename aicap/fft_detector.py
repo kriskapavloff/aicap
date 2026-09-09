@@ -11,12 +11,13 @@ matplotlib.use("Agg")
 
 import matplotlib.pyplot as plt
 import numpy as np
-from PIL import Image
+
+from . import preprocessing
 
 
 def load_grayscale(image_path):
-    image = Image.open(image_path).convert("L")
-    return np.asarray(image, dtype=np.float32)
+    image = preprocessing.load_image(image_path)
+    return preprocessing.to_grayscale_array(image)
 
 
 def power_spectrum(gray):
