@@ -1,7 +1,8 @@
+# torch и torchvision сюда намеренно не включены — их нужно ставить отдельной
+# командой с CPU-сборкой, см. README (иначе pip по умолчанию тянет версию
+# с CUDA, она весит гигабайты и не нужна для этого проекта)
 numpy
 Pillow
-torch
-torchvision
 matplotlib
 piexif
 open_clip_torch

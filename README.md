@@ -24,10 +24,25 @@
 ## Запуск
 
 ```bash
+python -m venv venv
+venv\Scripts\activate        # Windows
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
 pip install -r requirements.txt
 ```
 
-(инструкции по запуску будут дополняться по мере готовности модулей)
+`torch`/`torchvision` ставятся отдельной командой с CPU-сборкой (флаг `--index-url`) —
+без него pip по умолчанию притянет версию с поддержкой CUDA, которая весит на порядок
+больше и для этого проекта не нужна (весь пайплайн рассчитан на CPU).
+
+Запуск отдельных детекторов:
+
+```bash
+python -m aicap.fft_detector путь/к/картинке.jpg
+python -m aicap.exif_detector путь/к/картинке.jpg
+python -m aicap.preprocessing путь/к/картинке.jpg
+```
+
+(инструкции по запуску будут дополняться по мере готовности остальных модулей)
 
 ## Ограничения
 
