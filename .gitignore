@@ -18,6 +18,8 @@ __pycache__/
 *.pth
 *.ckpt
 *.safetensors
+.cache/
+aicap/cnn_classifier.pkl
 
 # IDE
 .vscode/
